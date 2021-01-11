@@ -1,0 +1,33 @@
+{
+  "name": "vue-admin",
+  "version": "4.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "blueimp-md5": "^2.18.0",
+    "element-ui": "^2.11.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
+    "vue": "^2.6.10",
+    "vue-admin": "./",
+    "vue-manage-system": "./",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.1.2",
+    "vuex-persistedstate": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
