@@ -6,6 +6,11 @@ export default [
         meta: { title: '菜单列表' ,is_login:true}
     },
     {
+        path: '/menut/blogmenut',
+        component: () => import('@/views/blogmenut/index.vue'),
+        meta: { title: '博客菜单' ,is_login:true}
+    },
+    {
         path: '/user/userlist',
         component: () => import('@/views/userPage/index.vue'),
         meta: { title: '用户列表' ,is_login:true}
