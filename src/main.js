@@ -15,13 +15,8 @@ Vue.use(filters)
 router.beforeEach((to,from,next)=>{
     if(to.matched.some(res=>res.meta.isLogin)){//判断是否需要登录
         let token = localStorage.getItem('token');
-        if (token!=null) {
-            console.log(to,from,999)
-            if(to.path == '/login'){
-                next(from.path) 
-            }else{
-                next() 
-            }
+        if (token) {
+            next() 
         }else{
             next({
                 path:"/login"
